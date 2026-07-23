@@ -1,0 +1,77 @@
+#wap to sum 1-10
+
+i=1
+sum=0
+while i<=10:
+    sum+=i
+    i+=1
+print(sum)  
+
+#reverse 25-15
+
+i=25
+while i>=15:
+    print(i)
+    i-=1
+
+#square 11-20
+
+i=11
+while i<=20:
+    print(i,"-",i*1)
+    i+=1
+
+#find out even no 1-50 and calculate sum
+
+i=1
+sum=0
+while i<=50:
+    if i%2==0:
+        sum=sum+i
+    i+=1
+        
+print(sum)            
+
+
+#print 1-5 and skip 4
+
+i=0
+while i<5:
+    i+=1
+    if i==4:
+        continue
+    
+    print(i)
+
+#print even no from 23 to 57 in reverse
+
+for i in range (58,23,-1):
+    if i%2==0:
+    
+     print(i) 
+
+# wap find 1-100 divisible by 5 and calculate sum and square
+
+sum=0
+for i in range (1,100+1):
+    if i%5==0:
+        sum=sum+i
+print(sum)
+print(sum*sum)
+
+#table of 5 like 5X1=5
+for i in range (1,11):
+    print(5,"x",i,"=",5*i)
+
+#take user ip and starting 101 and ending 501 divisble by %12 and %6
+
+num=int(input("enter a number:"))
+for i in range (101,502):
+    if(i%12==0 and i%6==0):
+        print(i)
+
+#wap take user ip 11-51 and gap is 4
+
+num=int(input("enter a number:"))
+for num in range(11,52,4):
+    print(num)            

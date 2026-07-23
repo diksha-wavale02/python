@@ -1,0 +1,63 @@
+#largest of 3 no
+
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+c=int(input("enter third number:"))
+if a>b and a>c:
+    print(" a is greater")
+
+elif b>a and b>c:
+    print("b is greater")
+else:
+    print("c is gretaer")    
+      
+#enter any character and check wheather capital,small,number or any other special symbol
+ch=input("enter any character")
+if ch<='A'and ch<='Z':
+    print("capital letter",ch)
+elif ch>='a' and ch<='z':
+    print("small character",ch)
+elif ch>=0 and ch<=9:
+    print("numbers",ch)
+else:
+    print("special character") 
+    
+
+#prime
+
+n=int(input("enter a number:"))
+if n>1:
+    flag=0
+for i in range(2,n):
+    if n%i==0:
+        flag=1
+        break
+if flag==0:
+    print("prime")
+else:
+    print("not prime")    
+    
+#palindrome 
+
+
+n=int(input("enter a number:"))
+temp=n
+rev=0
+while n>0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+if temp==rev:
+    print("palindrome")
+else:
+    print("not palindrome")        
+
+#reverse
+
+n=int(input("enter a number:"))
+rev=0
+while n>0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+print("reverse",rev)    
